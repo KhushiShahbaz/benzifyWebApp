@@ -2,7 +2,7 @@ import React from "react";
 // import { motion } from "framer-motion";
 import ContentWave from "../Components/Home/contentWaves";
 import TrustedPartnersSlide from "../Components/Home/trustedPartners";
-import BannerWithLight from "../Components/Home/banner";
+// import BannerWithLight from "../Components/Home/banner";
 import WhatClientsSay from "../Components/Home/WhatOurClientsSayAboutUs";
 
 export default function HomePage() {
@@ -10,7 +10,7 @@ export default function HomePage() {
     <div className="w-full overflow-x-hidden font-sans">
   
       {/* 1. Banner Section */}
-      <BannerWithLight />
+      {/* <BannerWithLight /> */}
 
       {/*2. Content Section */}
       <ContentWave />

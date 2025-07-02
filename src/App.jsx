@@ -2,6 +2,7 @@ import './index.css'
 import { RoutersProvider } from './router/index.jsx'
 import './globals.css'
 import Navbar from './Components/Layout/navbar.jsx'
+import Footer from './Components/Layout/footer.jsx'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <div className="pt-20">
           <RoutersProvider />
         </div>
+        <Footer/>
       </div>
     </>
   )

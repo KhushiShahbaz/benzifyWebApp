@@ -2,7 +2,7 @@
 export default function ContentWave() {
     return (
         <div
-        className="text-white md:h-[100%] h-[42vh] w-full bg-no-repeat bg-cover"
+        className="text-white h-[100%] w-full bg-no-repeat bg-cover p-6"
         style={{
           backgroundImage: `url('/Subtract.svg')`,
         }}

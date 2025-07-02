@@ -5,6 +5,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+function Arrow() {
+  return (
+    <div
+      style={{ display: "none" }}
+    />
+  );
+}
+
 function Testimonials({rtl}) {
   const settings = {
     dots: false,
@@ -12,11 +20,13 @@ function Testimonials({rtl}) {
     speed: 2000,
     slidesToShow: 2,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
     rtl: rtl,
     focuOnSlide:true,
+    nextArrow: <Arrow />,
+    prevArrow: <Arrow />,
     responsive: [
       {
         breakpoint: 1280,
@@ -39,7 +49,7 @@ function Testimonials({rtl}) {
 
   return (
    
-      <Slider {...settings} className="w-full relative">
+      <Slider {...settings} className="">
   {testimonials.map((testimonial) => (
     <div key={testimonial.id} className="px-2">
       <TestimonialCard {...testimonial} />

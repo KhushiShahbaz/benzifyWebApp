@@ -3,20 +3,25 @@ import Testimonials from "./testimonial";
 
 function WhatClientsSay() {
   return (
-    <div className="px-4 my-7  relative z-0">
-      <h1 className="text-5xl text-white text-center font-bold mt-6 ">
-        What Our Client Says About Us
-      </h1>
-      <div className="relative space-y-12">
-        <div className="relative z-10">
-          <Testimonials rtl={false} />
-        </div>
-
-        <div className="relative z-20 -mt-12">
-          <Testimonials rtl={true} />
-        </div>
+    <div className="px-4 py-10">
+    <h1 className="text-5xl text-white text-center font-bold">
+      What Our Client Says About Us
+    </h1>
+  
+    {/* Container with enough height and visible overflow */}
+    <div className="relative min-h-[700px] overflow-visible">
+      {/* First Testimonials */}
+      <div>
+        <Testimonials rtl={false} />
+      </div>
+  
+      {/* Second Testimonials positioned lower */}
+      <div className="absolute top-[320px] w-full">
+        <Testimonials rtl={true} />
       </div>
     </div>
+  </div>
+  
   );
 }
 
