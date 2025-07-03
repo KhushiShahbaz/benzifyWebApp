@@ -1,14 +1,15 @@
 import React from 'react'
 
-function CustomButton({text,onClick}) {
+function CustomButton({text,onClick,textColor}) {
   return (
     <button
     key={text}
     onClick={onClick}
-    className="cursor-pointer border border-white text-white px-5 py-2 rounded-full hover:bg-white hover:text-black transition duration-300"
->
+    className={`text-[16px] leading-none cursor-pointer border border-${textColor} text-${textColor} px-5 py-2 rounded-full hover:bg-white hover:text-black transition duration-300 `}
+  >
     {text}
-</button>
+  </button>
+  
   )
 }
 

@@ -6,7 +6,7 @@ import AnimatedCard from "../ChooseUsCard";
 function WhyChooseUs() {
   return (
     <section>
-      <div className=" mx-auto text-center my-20">
+      <div className=" mx-auto text-center my-20 ">
       <h1 className="text-5xl text-white text-center font-bold my-4">
       Why Choose Us?</h1>
         <h4 className="text-2xl text-gray-300">
@@ -14,8 +14,7 @@ function WhyChooseUs() {
           revenue across the U.S.
         </h4>
       </div>
-      {/* <WhyChooseUsCard /> */}
-      <div className="min-h-screen flex items-center justify-center px-4 py-10">
+      <div className="min-h-screen flex items-center justify-center px-4 py-10 overflow-x-hidden">
       <div className="flex gap-15 flex-wrap justify-center items-center w-full md:w-[90%] h-auto px-[2vw]">
         {whyChooseUsData.map((card, idx) => (
           <AnimatedCard
@@ -35,7 +34,7 @@ function WhyChooseUs() {
           Let’s create something amazing together. Contact us today or request a
           free consultation to boost your visibility and revenue.
         </p>
-        <CustomButton {...{text:"Get Free Consultation"}} />
+        <CustomButton {...{text:"Get Free Consultation",textColor:"white"}} />
        
       </div>
     </section>

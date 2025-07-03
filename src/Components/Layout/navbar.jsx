@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 w-full  z-50 md:px-4 md:h-20">
       {/* Navbar */}
-      <nav className="flex items-center justify-between bg-gradient-to-r from-black/30 via-black/50 to-black/30 backdrop-blur-md px-4 py-3 md:rounded-full md:px-6 md:py-2">
+      <nav className="flex items-center  md:justify-between bg-gradient-to-r from-black/30 via-black/50 to-black/30 backdrop-blur-md px-4 py-3 md:rounded-full md:px-6 md:py-2">
         {/* Hamburger for Mobile */}
         <div className="md:hidden">
           <button
@@ -41,7 +41,7 @@ export default function Navbar() {
         </div>
 
         {/* Logo */}
-        <div className="text-center md:order-2">
+        <div className="text-center md:order-2 px-8 ">
           <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 tracking-wide">
             BENZIFY
           </h1>
@@ -50,13 +50,13 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex md:space-x-6 md:order-1">
           {["About", "Services"].map((item) => (
-            <Button {...{text: item }} />
+            <Button {...{text: item ,textColor:"white"}} />
           ))}
         </div>
 
         <div className="hidden md:flex md:space-x-6 md:order-3">
           {["Blogs", "Contact"].map((item) => (
-            <Button {...{text: item }} />
+            <Button {...{text: item ,textColor:"white"}} />
           ))}
         </div>
       </nav>
@@ -65,7 +65,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-md flex flex-col items-center justify-center space-y-6 z-40">
           {["About", "Services", "Blogs", "Contact"].map((item) => (
-            <Button {...{text:item}} onClick={() => setIsOpen(false)}/>
+            <Button {...{text:item, textColor:"white"}} onClick={() => setIsOpen(false)}/>
            
           ))}
         </div>
