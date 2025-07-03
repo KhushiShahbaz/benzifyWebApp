@@ -30,7 +30,7 @@ export default function TrustedPartnersSlide() {
   };
 
   return (
-    <section className="py-8 bg-white mt-3">
+    <section className="py-8 bg-white mt-3 overflow-x-hidden">
       <div className="max-w-[100%] mx-auto px-4">
         <Slider {...settings} className="w-full">
           {[...Array(7)].map((_, i) => (
