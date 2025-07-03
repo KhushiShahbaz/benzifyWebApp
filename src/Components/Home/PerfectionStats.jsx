@@ -91,11 +91,12 @@ export default function AnimatedStats() {
           transition={{ duration: 1 }}
         >
           <h2 className="text-white text-2xl font-semibold mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Why We Are Perfect
           </h2>
           <p className="text-gray-200 mb-8">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+          We proudly serve clients across all 50 states from startups in New York to enterprises in
+California. Whether you need website redesign, local SEO, or a custom Shopify store,
+we help businesses scale digitally with confidence.
           </p>
 
           {statsLeft.map((item, index) => (
