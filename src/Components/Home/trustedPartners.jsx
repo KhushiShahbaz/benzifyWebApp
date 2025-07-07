@@ -41,7 +41,7 @@ export default function TrustedPartnersSlide() {
   };
 
   return (
-    <section className="py-8 mt-3 overflow-x-hidden bg-gradient-to-r from-[#140122] via-black to-purple-900">
+    <section className="py-8 mt-3 overflow-x-hidden bg-gradient-to-r from-[#020322] to-purple-900">
       <div className="max-w-[100%] mx-auto px-4">
         <Slider {...settings} className="w-full">
           {[...Array(7)].map((_, i) => (

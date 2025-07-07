@@ -5,7 +5,7 @@ import AnimatedCard from "../ChooseUsCard";
 
 function WhyChooseUs() {
   return (
-    <section className="bg-gradient-to-r from-[#140122] via-black to-purple-900 py-5">
+    <section className="bg-gradient-to-r from-[#020322]  to-purple-900 py-5">
       <div className=" mx-auto text-center my-20 ">
       <h1 className="text-5xl text-white text-center font-bold my-4">
       Why Choose Us?</h1>

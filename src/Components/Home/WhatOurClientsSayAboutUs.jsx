@@ -3,7 +3,7 @@ import Testimonials from "./testimonial";
 
 function WhatClientsSay() {
   return (
-    <div className="px-4 py-10 bg-gradient-to-r from-[#140122] via-black to-purple-900">
+    <div className="px-4 py-10 bg-gradient-to-r from-[#020322] to-purple-900">
     <h1 className="text-5xl text-white text-center font-bold">
       What Our Client Says About Us
     </h1>
