@@ -2,7 +2,6 @@ import ContentWave from "../Components/Home/contentWaves";
 import TrustedPartnersSlide from "../Components/Home/trustedPartners";
 import WhatClientsSay from "../Components/Home/WhatOurClientsSayAboutUs";
 import WhyChooseUs from "../Components/Home/WhyChooseUs";
-
 import OurServices from "../Components/Home/ourServices";
 import SpectrumLandingPage from "../Components/BannerLight";
 import AnimatedStats from "../Components/Home/PerfectionStats";
@@ -20,7 +19,7 @@ export default function HomePage() {
       <ContentWave />
 
       {/* 4. Our Services */}
-      <OurServices />
+     <OurServices/>
 
       {/* 5. Why Choose Us */}
       <WhyChooseUs />

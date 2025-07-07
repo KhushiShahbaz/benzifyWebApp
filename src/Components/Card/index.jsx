@@ -2,7 +2,7 @@
 import { useTransform, motion, useScroll, useSpring } from 'framer-motion';
 import { useRef } from 'react';
 
-const ServiceCard = ({i, title, description, listing,image, progress, range, }) => {
+const ServiceCard = ({i, title, description, listing,image,bgColor}) => {
 
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -15,20 +15,13 @@ const ServiceCard = ({i, title, description, listing,image, progress, range, }) 
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.9, 1.05, 0.9]);
   const smoothScale = useSpring(scale, { stiffness: 100, damping: 20 });
 
-  const colors = [
-    'bg-blue-400',
-    'bg-orange-400', 
-    'bg-indigo-400',
-    'bg-pink-400',
-    'bg-green-400',
-    'bg-purple-400'
-  ];
+ 
   
   return (
-    <div ref={container} className={'h-[100vh] flex items-center justify-center sticky top-0'}>
+    <div ref={container} className={'h-[100%] flex items-center justify-center sticky top-0'}>
       <motion.div 
         style={{ smoothScale, top:`calc(-5vh + ${i * 25}px)`}} 
-        className={`flex flex-col relative top-[-25%] md:w-[50%] w-[90%] h-[72%]  md:h-[65vh]  ${colors[i % colors.length]} box-border p-8 rounded-[50px] shadow-[0_0_30px_0_rgba(0,0,0,0.3)] items-center origin-top `}
+        className={`flex flex-col relative top-[-25%]  w-[100%] h-[72%]  md:h-[74vh]  ${bgColor} box-border p-8 rounded-[50px] shadow-[0_0_30px_0_rgba(0,0,0,0.3)] items-center origin-top `}
       >
          <div className="absolute top-4 left-4 bg-white/20 text-white text-sm px-3 py-1 rounded-full shadow">
           #{i + 1}

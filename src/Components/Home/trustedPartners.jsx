@@ -3,6 +3,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+function Arrow() {
+  return (
+    <div
+      style={{ display: "none" }}
+    />
+  );
+}
+
 export default function TrustedPartnersSlide() {
   const settings = {
     dots: false,
@@ -13,6 +21,9 @@ export default function TrustedPartnersSlide() {
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    focuOnSlide:true,
+    nextArrow: <Arrow />,
+    prevArrow: <Arrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -30,7 +41,7 @@ export default function TrustedPartnersSlide() {
   };
 
   return (
-    <section className="py-8 bg-white mt-3 overflow-x-hidden">
+    <section className="py-8 mt-3 overflow-x-hidden bg-gradient-to-r from-[#140122] via-black to-purple-900">
       <div className="max-w-[100%] mx-auto px-4">
         <Slider {...settings} className="w-full">
           {[...Array(7)].map((_, i) => (

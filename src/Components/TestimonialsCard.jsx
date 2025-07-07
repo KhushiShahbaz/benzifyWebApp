@@ -3,7 +3,7 @@ import React from "react";
 export default function TestimonialCard({ name, content, image }) {
   return (
     <div
-      className="relative bg-gray-800 text-white rounded-2xl p-6 pt-20 max-w-[690px] h-[300px] text-center shadow-xl mx-auto mt-14
+      className="relative bg-gray-800 text-white rounded-2xl p-6 pt-20 max-w-[500px] h-[250px] text-center shadow-xl mx-auto mt-14
       transition-all duration-300 hover:scale-105 hover:border-2 hover:border-purple-500 hover:shadow-2xl"
     >
       {/* Top Avatar */}
