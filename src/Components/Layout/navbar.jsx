@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 w-full  z-50 md:px-4 md:h-20">
       {/* Navbar */}
-      <nav className="flex items-center  md:justify-between bg-gradient-to-r from-black/30 via-black/50 to-black/30 backdrop-blur-md px-4 py-3 md:rounded-full md:px-6 md:py-3">
+      <nav className="flex items-center border-b-1 border-white md:justify-between bg-gradient-to-r from-black/30 via-black/50 to-black/30 backdrop-blur-md px-4 py-3 md:rounded-full md:px-6 md:py-3">
         {/* Hamburger for Mobile */}
         <div className="md:hidden">
           <button

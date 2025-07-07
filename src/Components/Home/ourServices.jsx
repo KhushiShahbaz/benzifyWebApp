@@ -18,15 +18,15 @@ const OurServices = () => {
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 py-10 md:px-12">
-        <OurCoreServicesCard data={ServicesData1} />
-        <OurCoreServicesCard data={servicesData2} />
-        <OurCoreServicesCard data={servicesData3} />
-        <OurCoreServicesCard data={servicesData4} />
-        <OurCoreServicesCard data={servicesData5} />
-        <OurCoreServicesCard data={servicesData6} />
+        <OurCoreServicesCard data={ServicesData1}  image={false}/>
+        <OurCoreServicesCard data={servicesData2} image={false}/>
+        <OurCoreServicesCard data={servicesData3} image={false}/>
+        <OurCoreServicesCard data={servicesData4} image={false}/>
+        <OurCoreServicesCard data={servicesData5} image={false}/>
+        <OurCoreServicesCard data={servicesData6} image={false} />
       </div>
       <div className="mx-[10rem]">
-    <OurCoreServicesCard data={servicesData}/>
+    <OurCoreServicesCard data={servicesData} image={true}/>
     </div>
     </div>
   );

@@ -4,7 +4,7 @@ import Lenis from "@studio-freight/lenis/types";
 import { useScroll } from "framer-motion";
 import ServiceCard from "../Components/Card";
 
-const OurCoreServicesCard = ({data}) => {
+const OurCoreServicesCard = ({data,image}) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -33,6 +33,7 @@ const OurCoreServicesCard = ({data}) => {
                 i={i}
                 {...project}
                 progress={scrollYProgress}
+                imageVisible={image}
               />
             );
           })}          

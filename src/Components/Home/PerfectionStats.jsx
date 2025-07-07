@@ -99,8 +99,25 @@ export default function AnimatedStats() {
   return (
     <div ref={ref} className="w-full">
       <div className="max-w-7xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-12">
-        {/* Left Section */}
-        <motion.div
+       
+
+        {/* Right Section */}
+        <div className="grid grid-cols-2 gap-8">
+          {statsRight.map((stat, idx) => (
+            <StatItem
+              key={stat.label}
+              label={stat.label}
+              value={stat.value}
+              icon={stat.icon}
+              delay={idx * 0.3}
+              inView={inView}
+            />
+          ))}
+        </div>
+
+
+         {/* Left Section */}
+         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           transition={{ duration: 1 }}
@@ -124,20 +141,6 @@ export default function AnimatedStats() {
             />
           ))}
         </motion.div>
-
-        {/* Right Section */}
-        <div className="grid grid-cols-2 gap-8">
-          {statsRight.map((stat, idx) => (
-            <StatItem
-              key={stat.label}
-              label={stat.label}
-              value={stat.value}
-              icon={stat.icon}
-              delay={idx * 0.3}
-              inView={inView}
-            />
-          ))}
-        </div>
       </div>
     </div>
   );
