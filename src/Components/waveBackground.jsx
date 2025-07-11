@@ -6,7 +6,7 @@ const WaveBackground = () => {
     width="1440.000000pt" height="264.000000pt" viewBox="0 0 1440.000000 264.000000"
     preserveAspectRatio="xMidYMid meet">
    
-   <g transform="translate(0.000000,264.000000) scale(0.100000,-0.100000)"
+   <g transform="translate(0.000000,264.000000) scale(0.150000,-0.150000)"
    fill="#37145A" stroke="none">
    <path d="M8642 2625 c-29 -8 -63 -20 -75 -27 -14 -8 -57 -11 -122 -9 -55 1
    -122 -3 -150 -9 -27 -6 -86 -13 -130 -15 -234 -12 -307 -17 -332 -21 -40 -8

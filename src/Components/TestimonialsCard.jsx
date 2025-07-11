@@ -3,7 +3,7 @@ import React from "react";
 export default function TestimonialCard({ name, content, image }) {
   return (
     <div
-      className="relative bg-gray-800 text-white rounded-2xl p-6 pt-20 max-w-[500px] h-[250px] text-center shadow-xl mx-auto mt-14
+      className="relative bg-gray-800 text-white rounded-2xl p-3 pt-14 max-w-[340px] h-[230px] text-center shadow-xl mx-auto mt-14
       transition-all duration-300 hover:scale-105 hover:border-2 hover:border-purple-500 hover:shadow-2xl"
     >
       {/* Top Avatar */}
@@ -21,8 +21,8 @@ export default function TestimonialCard({ name, content, image }) {
           “
         </span>
 
-        <h3 className="text-lg font-bold mt-4">{name}</h3>
-        <p className="mt-4 text-sm text-gray-300">{content}</p>
+        <h3 className="text-lg font-bold mt-2">{name}</h3>
+        <p className="mt-2 text-sm text-gray-300">{content}</p>
 
         {/* Right quote mark */}
         <span className="absolute -bottom-5 right-7 text-purple-500 text-4xl font-bold z-10">

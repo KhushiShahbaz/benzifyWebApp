@@ -3,7 +3,7 @@ import WaveBackground from '../waveBackground';
 
 export default function ContentWave() {
   return (
-    <div className="relative text-white w-full p-6 overflow-hidden bg-black py-[2.6rem] ">
+    <div className="relative text-white w-full p-6 overflow-hidden py-[2.6rem] ">
       
       {/* SVG Wave Background */}
       <div className="absolute inset-0 z-0">
